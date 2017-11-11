@@ -13,7 +13,7 @@ module.exports = {
       await page.goto(config.URL);
       await page.click(search_input);
       await page.type(val);
-      await page.click(config.SEACH_RESULT_SELECTOR);
+      await page.click(config.SEARCH_RESULT_SELECTOR);
       // Wait for results and show details.
       await page.waitForNavigation();
       await page.evaluate((sel) => {
